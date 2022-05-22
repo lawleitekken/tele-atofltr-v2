@@ -142,8 +142,8 @@ async def start(client, message):
                 f_caption = f"{title}"
             buttons = [
                 [
-                    InlineKeyboardButton('Follow YouTube', url='https://t.me/JOSPSupport'),
-                    InlineKeyboardButton('Follow Instagram', url='https://t.me/JosProjects')
+                    InlineKeyboardButton('YouTube', url='https://youtube.com/channel/UCIHyv1blTqrR34wn1ErFS_A'),
+                    InlineKeyboardButton('Instagram', url='https://instagram.com/req_mvs')
                 ],
                 [
                     InlineKeyboardButton('Movies Release Dates', url='https://t.me/req_mvs')
@@ -256,11 +256,11 @@ async def start(client, message):
         f_caption = f"{files.file_name}"
     buttons = [
         [
-            InlineKeyboardButton('YouTube', url='https://t.me/JOSPSupport'),
-            InlineKeyboardButton('Instagram', url='https://t.me/JosProjects')
+            InlineKeyboardButton('YouTube', url='https://youtube.com/channel/UCIHyv1blTqrR34wn1ErFS_A'),
+            InlineKeyboardButton('Instagram', url='https://instagram.com/req_mvs')
         ],
         [
-            InlineKeyboardButton('Movies Release Dates', url='https://t.me/+y53tWFUw6Q43NzE9')
+            InlineKeyboardButton('Movies Release Dates', url='https://t.me/req_mvs')
         ]
         ]
     await client.send_cached_media(
