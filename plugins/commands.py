@@ -43,13 +43,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, Script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('Add me to your Chat', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('New Releases', url='https://t.me/+zTEnkJUrwu0zYTll')
             ],[
-            InlineKeyboardButton('Telugu', url='help'),
-            InlineKeyboardButton('Tamil',url='about')
+            InlineKeyboardButton('Telugu', url='https://t.me/+IW5RgfHBKBVjMWNl'),
+            InlineKeyboardButton('Tamil',url='https://t.me/+NoZY7VZlvFxjZmQ1')
             ],[
-            InlineKeyboardButton('Hollywood Dubbed', url='https://t.me/josprojects'),
-            InlineKeyboardButton('Kannada & Malayalam', url='https://t.me/+y53tWFUw6Q43NzE9')
+            InlineKeyboardButton('Hollywood Dubbed', url='https://t.me/+g3vrbWWOz4IzZmNl'),
+            InlineKeyboardButton('Kannada & Malayalam', url='https://t.me/+kRwV2nAqpDVjYzM9')
             ],[
             InlineKeyboardButton('✗ Close the Menu ✗', callback_data='close_data')
         ]]
@@ -89,15 +89,13 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('Add me to your Chat', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('New Releases', url='https://t.me/+zTEnkJUrwu0zYTll')
             ],[
-            InlineKeyboardButton('help', callback_data='help'),
-            InlineKeyboardButton('about', callback_data='about')
+            InlineKeyboardButton('Telugu', url='https://t.me/+IW5RgfHBKBVjMWNl'),
+            InlineKeyboardButton('Tamil',url='https://t.me/+NoZY7VZlvFxjZmQ1')
             ],[
-            InlineKeyboardButton('search here movie', switch_inline_query_current_chat='')
-            ],[
-            InlineKeyboardButton('updates', url='https://t.me/josprojects'),
-            InlineKeyboardButton('movie club', url='https://t.me/+y53tWFUw6Q43NzE9')
+            InlineKeyboardButton('Hollywood Dubbed', url='https://t.me/+g3vrbWWOz4IzZmNl'),
+            InlineKeyboardButton('Kannada & Malayalam', url='https://t.me/+kRwV2nAqpDVjYzM9')
             ],[
             InlineKeyboardButton('✗ Close the Menu ✗', callback_data='close_data')
         ]]
@@ -144,8 +142,8 @@ async def start(client, message):
                 f_caption = f"{title}"
             buttons = [
                 [
-                    InlineKeyboardButton('YouTube', url='https://t.me/JOSPSupport'),
-                    InlineKeyboardButton('Instagram', url='https://t.me/JosProjects')
+                    InlineKeyboardButton('Follow YouTube', url='https://t.me/JOSPSupport'),
+                    InlineKeyboardButton('Follow Instagram', url='https://t.me/JosProjects')
                 ],
                 [
                     InlineKeyboardButton('Movies Release Dates', url='https://t.me/req_mvs')
